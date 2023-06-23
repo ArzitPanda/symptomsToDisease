@@ -2,6 +2,7 @@ import numpy
 import pandas
 import pickle
 import streamlit as st
+import sklearn
 
 sv = pickle.load(open('sv.pkl', 'rb'))
 tfdid = pickle.load(open('tfdid.pkl', 'rb'))
