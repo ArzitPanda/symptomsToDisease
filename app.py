@@ -31,6 +31,13 @@ res = {15: 'Psoriasis',
        22: 'peptic ulcer disease',
        19: 'diabetes'}
 st.title("symptoms to disease")
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 a = st.text_input(placeholder="enter how to feel", label="symptoms")
 
